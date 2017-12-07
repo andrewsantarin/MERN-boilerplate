@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
 
-class Home extends Component {
+class Counter extends Component {
   constructor(props) {
     super(props);
 
@@ -105,4 +105,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Counter;

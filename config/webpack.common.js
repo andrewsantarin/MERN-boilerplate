@@ -11,8 +11,8 @@ const isProd = NODE_ENV === 'production';
 
 module.exports = {
   entry: {
-    'app': [
-      helpers.root('client/app/index.js')
+    'src': [
+      helpers.root('client/src/index.js')
     ]
   },
 
@@ -22,9 +22,9 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['.js', '.json', '.css', '.scss', '.html'],
+    extensions: ['.js', '.jsx', '.json', '.css', '.scss', '.html'],
     alias: {
-      'app': 'client/app'
+      'src': 'client/src'
     }
   },
 
