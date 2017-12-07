@@ -29,7 +29,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // API routes
-require('./routes')(app);
+const configureRoutes = require('./routes');
+configureRoutes(app);
 
 if (isDev) {
   const compiler = webpack(webpackConfig);
