@@ -15,5 +15,5 @@ nodemon({
 })
 .once('exit', function () {
   console.log('Shutting down server');
-  process.exit();
+  // process.exit();
 });
